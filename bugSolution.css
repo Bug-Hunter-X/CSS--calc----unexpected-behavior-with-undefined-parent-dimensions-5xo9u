@@ -1,0 +1,12 @@
+To fix this, make sure that the parent element has its dimensions defined, either explicitly or implicitly (e.g., through content). If the parent's dimensions are dynamic, consider using a JavaScript solution or alternative CSS techniques to achieve the desired layout.  Here is an example of how to correct the issue by ensuring the parent container has a defined width:
+
+```css
+/* bugSolution.css */
+.container {
+  width: 500px; /* Define the parent's width */
+}
+
+.element {
+  width: calc(100% - 10px);
+}
+```
